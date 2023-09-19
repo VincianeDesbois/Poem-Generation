@@ -1,0 +1,56 @@
+body {background-color: #274c9d;}
+h1 {color: #dbdcf0; font: 'Lucida', sens-serif; font-size:30px;}
+h3 {color: #274c9d; font: 0.5rem 'Lucida', sans-serif; font-size:20px;}
+p {color: #dbdcf0; font: 1rem 'Lucida', sans-serif;  font-size:17px;}
+li {color: #dbdcf0; font: 1rem 'Lucida', sans-serif;  font-size:15px;}
+ul {display: table;margin: 0 auto; text-align: left;}
+figcaption {color: #dbdcf0;}
+label {font: 1rem 'Lucida', sans-serif;  font-size:15px; color:#274c9d;}
+legend {font: 1rem 'Lucida', sans-serif;  font-size:15px;}
+a:link {color: #dbdcf0;}
+
+
+/* Classes */
+.bienvenue {color: #dbdcf0; font: 0.5rem 'Lucida', sans-serif; font-size:30px;}
+.small-bienvenue {color: #dbdcf0; font: 0.5rem 'Lucida', sans-serif; font-size:17px;}
+.small-title {color: #274c9d; font: 0.5rem 'Lucida', sans-serif; font-size:18px;}
+.p3 {color: #274c9d; font: 0.5rem 'Lucida', sans-serif; font-size:15px;}
+.box-test {border: 0px; padding:0.5em; background: #dbdcf0; border-radius: 2em; width: 500px; height: 260px; margin-left: auto;margin-right: auto}    
+.column {float: left;width: 50%;}
+.row:after {content: "";display: table;clear: both;}  
+.avatar {border:0px; border-radius: 50%;}
+.center {margin: 0;position: absolute;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+.p1 {align-items: center; justify-content: center; margin: 0 5em 1em 5em; text-align: center; color:#dbdcf0; font-size:18px;}
+.ButtonPrintPdf {margin-left: auto; margin-right: auto;display:none}
+@media print {.noPrint{display:none;}} h1{color:rgb(0, 0, 0);}
+.spinner {width: 1.5rem;height: 1.5rem;border-top-color: #444;border-left-color: #444;animation: spinner 400ms linear infinite;border-bottom-color: transparent;border-right-color: transparent;border-style: solid;border-width: 2px;border-radius: 50%;  box-sizing: border-box;display: inline-block;vertical-align: middle;}
+@keyframes spinner {0% { transform: rotate(0deg); }100% {transform: rotate(360deg); }}
+.spinner-large {width: 4rem;height: 4rem;border-width: 5px;}
+.spinner-slow {animation: spinner 1s linear infinite;}
+.spinner-blue {border-top-color: #dbdcf0;border-left-color: #dbdcf0;}
+.small-box{border: 0px; padding:0.5em; background: #dbdcf0; border-radius: 2em; width: 500px; margin-left: auto;margin-right: auto}    
+
+
+/* ID */
+#specifyColor {accent-color: #274c9d;}
+#ValidateAccueil {border: 0px; color: #274c9d; font: 1rem 'Lucida', sans-serif;  font-size:15px; background-color:#dbdcf0; cursor: pointer; border-radius: 5px; width: 90px; height: 40px}
+#ValidateAccueil:hover {background-color: white;color: #274c9d;}
+#Validate {border: 0px; color: rgb(0, 0, 0); font: 1rem 'Lucida', sans-serif;  font-size:15px; background-color:#274c9d;color:white; cursor: pointer; border-radius: 5px; width: 90px; height: 40px}
+#Validate:hover {background-color: white;color: #274c9d;}
+#ValidateReturn {border: 0px; color: #274c9d; font: 1rem 'Lucida', sans-serif;  font-size:15px; background-color:#dbdcf0; cursor: pointer; border-radius: 5px; width: 350px; height: 40px}
+#ValidateReturn:hover {background-color: white;color: #274c9d;}
+#ValidateReturnNew {border: 0px; color: #274c9d; font: 1rem 'Lucida', sans-serif;  font-size:15px; background-color:#dbdcf0; cursor: pointer; border-radius: 5px; width: 350px; height: 40px}
+#ValidateReturnNew:hover {background-color: white;color: #274c9d;}
+#GeneratePoem {border: 0px; color: rgb(0, 0, 0); font: 1rem 'Lucida', sans-serif;  font-size:15px; background-color:#274c9d;color:white; cursor: pointer; border-radius: 5px; width: 150px; height: 40px}
+#GeneratePoem:hover {background-color: white;color: #274c9d;}
+#main {text-align: center;margin: 0 auto;}
+#loader {text-align:center}
+
+/* input type */
+input {margin: .4rem;}
+input[type=text] {border: 0px solid #274c9d;border-radius: 4px;}
+input[type='radio'] {width: 20px;height: 20px; border: 2px solid #747474; border-radius: 50%; outline: none;}
+input[type=radio]#BlueRadio {accent-color: #274c9d;display:table-cell;vertical-align:middle;}
+input[type='radio']:hover:before {box-shadow: 0px 0px 0px 12px rgba(80, 80, 200, 0.2); border-radius: 50%; opacity: 1;}
+input[type='radio']:before {content: ''; display: block; width: 60%; height: 60%; margin: 20% auto; border-radius: 50%; transition: 0.3s;}
+input[type='radio']:checked:before {background: #274c9d;}

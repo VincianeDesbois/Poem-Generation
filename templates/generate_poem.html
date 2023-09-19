@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PoemFactory</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='/images/small_logo_blue.png')}}" />
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script>
+        function myFunction() {document.getElementById('loader').style.display = ""
+        document.getElementById('small-box-id').style.display = "none"}
+    </script>
+</head>
+<body>
+</br>
+<div style="text-align: center">
+<img class="avatar" src="{{url_for('static', filename='/images/logo.png')}}" alt="Logo Poem Generator" width=18% height=18%/></div>
+</br>
+</br>
+</br>
+</br>
+<div id = "loader" style="display:none">
+    <p style="text-align:center"> Pour information, il faut environ une dizaine de secondes pour générer le nouveau poème</p>
+    <span style="text-align:center" class="spinner spinner-large spinner-blue spinner-slow"></span>
+    </br>
+    </br>
+    </br>
+</div>
+<div class="small-box" id='small-box-id'>
+    <p style="text-align: center" class = small-title>Voici le poème généré pour les mots "{{words[0]}}", "{{words[1]}}" et "{{words[2]}}" : </p>
+    <div id="p1" class="p3" style="text-align:center">
+    <br>
+    <br>
+    {% autoescape false %}
+        {{poem}}
+    {% endautoescape %}
+    <br>
+    <br>
+    </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+<form action="/chose_words/" method="get">
+<div class="center">
+<input type="submit" id="ValidateReturn" style="text-align:center" value="Générer un poème avec de nouveaux mots">
+<br>
+</form>
+<form  action="/generate_poem/" method="get">
+<input type="submit" id="ValidateReturnNew" style="text-align:center" value="Générer un autre poème avec les mêmes mots" onclick = "myFunction()">
+<br>
+</form>
+ </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</body>
+<footer>
+    <figcaption class="blockquote-footer" style="text-align:center">
+    </br>
+    - Projet de <cite title="Source Title"> Cloud Computing</cite> - </br>
+    Yvan Belakebi-Joly, Vinciane Desbois, Simon Mariani & Clémence Millet <br>
+    </figcaption>
+</footer> 
+</html>
